@@ -1,0 +1,52 @@
+#about1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#about1 img {
+    width: 60%;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 10px;
+    font-size: 50px;
+}
+
+#context {
+    position: relative;
+    text-align: left;
+    color: black;
+}
+
+#context img {
+    float: right;
+    height: 300px;
+} 
+
+#context2 {
+    position: relative;
+    float: left;
+    text-align: right;
+    color: black;
+}
+
+#context2 img {
+    height: 300px;
+    top: 20px;
+}
+
+#text2 {
+    flex: 1;
+    min-width: 200px;
+    float: right;
+    margin-top: 20px;
+    left: 20px;
+}
+
+

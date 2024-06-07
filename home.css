@@ -1,0 +1,60 @@
+#container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+#container img {
+    width: 60%;
+    
+}
+.centered-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 50px;
+}
+
+.centered-text h5 {
+    font-size: 50px;
+}
+
+.centered-text p {
+    font-size: 20px;
+}
+
+#container2 {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+#container3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+.image-wrapper {
+    flex: 1 1 150px; /* Adjust the size as needed */
+    max-width: 250px;
+    text-align: center;
+}
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.caption {
+    margin-top: 5px;
+    font-size: 14px;
+}
