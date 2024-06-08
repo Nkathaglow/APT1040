@@ -1,60 +1,296 @@
-#container {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-#container img {
-    width: 60%;
-    
-}
-.centered-text {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background */
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 50px;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-.centered-text h5 {
-    font-size: 50px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f7c08a;
+}
+
+#hero {
+    background: url('https://media.istockphoto.com/id/961798406/photo/stylish-champagne-glasses-and-food-appetizers-on-table-at-wedding-reception-luxury-catering-at.jpg?s=612x612&w=0&k=20&c=frEzhVL_VIJDedjN81w2Oj8L6Lj_JG3QhAvDiORCdEU=') center center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+#hero .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+#hero .btn {
+    background-color: #f7c08a;
+    color: #070707;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+#hero .btn:hover {
+    background-color: #e0a75d;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#specials .specials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+#specials .special {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#specials .special img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#specials .special h3 {
+    margin: 1rem 0;
+}
+
+#specials .special p {
+    padding: 0 1rem 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+#original-home {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.hero-content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.centered-text {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.centered-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #555;
 }
 
 .centered-text p {
-    font-size: 20px;
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #container2 {
-    position: relative;
+    margin-top: 3rem;
     text-align: center;
-    color: black;
 }
 
-#container3 {
+#container2 h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#container2 p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: #ff5a5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+.features {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 3rem;
 }
 
-h3 {
+.features h2{
+    color: #030303;
     text-align: center;
-    margin-top: 20px;
-    font-size: 24px;
+    margin-left: 200px;
 }
+
+.feature {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.feature p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
 .image-wrapper {
-    flex: 1 1 150px; /* Adjust the size as needed */
-    max-width: 250px;
-    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
 }
+
 .image-wrapper img {
     width: 100%;
     height: auto;
-    display: block;
+    transition: transform 0.3s ease;
 }
+
+.image-wrapper:hover img {
+    transform: scale(1.1);
+}
+
 .caption {
-    margin-top: 5px;
-    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
 }

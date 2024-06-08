@@ -3,53 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Events</title>
     <link rel="stylesheet" href="event.css">
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .event-section {
+            animation: fadeInUp 0.5s ease-in-out forwards;
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <div class="logo">Stunning Events</div>
+        <nav>
+            <ul>
+                <li><a href="/Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Event.html">Events</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div>
         <div id="event">
             <h3>Birthdays</h3>
-            <div id="eventI">
-              <div id="card">
-                <img src="https://media.istockphoto.com/id/975795816/photo/table-set-for-a-garden-party-or-celebration-outside.jpg?s=612x612&w=0&k=20&c=9-kt9kiugZtgKyarPuu0660kJWWGZeRYBv1l4JxHpTE=" alt="">
-                <div class="description">Garden Party</div>
-              </div>
-              <div id="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmAZGbZm4SX0l3fKenpiQf1MEMsD2gboaIuA&usqp=CAU" alt="">
-                <div class="description">Themed Party</div>
-              </div>
-              <div id="card">
-                <img src="https://media.istockphoto.com/id/1401363958/photo/candy-bar-for-birthday-party.jpg?s=612x612&w=0&k=20&c=ravBefYT-apbprtPN6nJ0VMpXV4-x7lp00aKP2TYfRM=" alt="">
-                <div class="description">Candy bar</div>
-              </div>
+            <div id="eventI" class="event-cards">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/975795816/photo/table-set-for-a-garden-party-or-celebration-outside.jpg?s=612x612&w=0&k=20&c=9-kt9kiugZtgKyarPuu0660kJWWGZeRYBv1l4JxHpTE=" alt="Garden Party">
+                    <div class="description">Garden Party</div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmAZGbZm4SX0l3fKenpiQf1MEMsD2gboaIuA&usqp=CAU" alt="Themed Party">
+                    <div class="description">Themed Party</div>
+                </div>
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/1401363958/photo/candy-bar-for-birthday-party.jpg?s=612x612&w=0&k=20&c=ravBefYT-apbprtPN6nJ0VMpXV4-x7lp00aKP2TYfRM=" alt="Candy bar">
+                    <div class="description">Candy bar</div>
+                </div>
             </div>
         </div>
         <div id="event2">
             <h3>Weddings</h3>
-            <div id="eventI">
-                <div id="card">
-                  <img src="https://media.istockphoto.com/id/975795816/photo/table-set-for-a-garden-party-or-celebration-outside.jpg?s=612x612&w=0&k=20&c=9-kt9kiugZtgKyarPuu0660kJWWGZeRYBv1l4JxHpTE=" alt="">
-                  <div class="description">Garden Party</div>
+            <div id="eventI" class="event-cards">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/975795816/photo/table-set-for-a-garden-party-or-celebration-outside.jpg?s=612x612&w=0&k=20&c=9-kt9kiugZtgKyarPuu0660kJWWGZeRYBv1l4JxHpTE=" alt="Garden Party">
+                    <div class="description">Garden Party</div>
                 </div>
-                <div id="card">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmAZGbZm4SX0l3fKenpiQf1MEMsD2gboaIuA&usqp=CAU" alt="">
-                  <div class="description">Themed Party</div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmAZGbZm4SX0l3fKenpiQf1MEMsD2gboaIuA&usqp=CAU" alt="Themed Party">
+                    <div class="description">Themed Party</div>
                 </div>
-                <div id="card">
-                  <img src="https://media.istockphoto.com/id/1401363958/photo/candy-bar-for-birthday-party.jpg?s=612x612&w=0&k=20&c=ravBefYT-apbprtPN6nJ0VMpXV4-x7lp00aKP2TYfRM=" alt="">
-                  <div class="description">Candy bar</div>
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/1401363958/photo/candy-bar-for-birthday-party.jpg?s=612x612&w=0&k=20&c=ravBefYT-apbprtPN6nJ0VMpXV4-x7lp00aKP2TYfRM=" alt="Candy bar">
+                    <div class="description">Candy bar</div>
                 </div>
+            </div>
         </div>
         <div id="event3">
             <h3>Proposals</h3>
-            <div id="card">
-                <img src="https://media.istockphoto.com/id/975795816/photo/table-set-for-a-garden-party-or-celebration-outside.jpg?s=612x612&w=0&k=20&c=9-kt9kiugZtgKyarPuu0660kJWWGZeRYBv1l4JxHpTE=" alt="">
-                <div class="description">Garden Party</div>
+            <div id="eventI" class="event-cards">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/975795816/photo/table-set-for-a-garden-party-or-celebration-outside.jpg?s=612x612&w=0&k=20&c=9-kt9kiugZtgKyarPuu0660kJWWGZeRYBv1l4JxHpTE=" alt="Garden Party">
+                    <div class="description">Garden Party</div>
+                </div>
             </div>
         </div>
-
     </div>
-    
 </body>
 </html>

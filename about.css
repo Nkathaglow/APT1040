@@ -1,52 +1,126 @@
-#about1 {
-    position: relative;
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-left: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f7c08a;
+}
+
+main {
+    padding: 2rem;
+}
+
+.content-section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+#our-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#our-team img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+#vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.vision-content {
+    flex-basis: 60%;
+}
+
+.vision-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.vision-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
     text-align: center;
-    color: white;
 }
 
-#about1 img {
-    width: 60%;
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-#text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    padding: 10px;
-    font-size: 50px;
+.footer-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
-#context {
-    position: relative;
-    text-align: left;
-    color: black;
+.footer-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
 }
-
-#context img {
-    float: right;
-    height: 300px;
-} 
-
-#context2 {
-    position: relative;
-    float: left;
-    text-align: right;
-    color: black;
-}
-
-#context2 img {
-    height: 300px;
-    top: 20px;
-}
-
-#text2 {
-    flex: 1;
-    min-width: 200px;
-    float: right;
-    margin-top: 20px;
-    left: 20px;
-}
-
-

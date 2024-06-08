@@ -1,11 +1,44 @@
 body {
     font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     margin: 0;
+    padding: 0;
     background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f7c08a;
 }
 
 form {
@@ -15,6 +48,7 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 100%;
+    margin: 20px auto; 
     box-sizing: border-box;
 }
 
@@ -25,24 +59,28 @@ form h1 {
     color: #333;
 }
 
-.name-fields, .contact-fields {
+.name-fields,
+.contact-fields {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
 }
 
-.name-fields .field, .contact-fields .field {
+.name-fields .field,
+.contact-fields .field {
     flex: 1;
 }
 
-.name-fields .field label, .contact-fields .field label {
+.name-fields .field label,
+.contact-fields .field label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     color: #555;
 }
 
-.name-fields .field input, .contact-fields .field input {
+.name-fields .field input,
+.contact-fields .field input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -68,7 +106,7 @@ form textarea {
     box-sizing: border-box;
     font-size: 16px;
     background-color: #f9f9f9;
-    resize: vertical; 
+    resize: vertical;
 }
 
 form input[type="submit"] {
